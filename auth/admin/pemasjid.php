@@ -19,15 +19,12 @@
     $fotolama= $_POST['fotolama'];
 
   $rand = rand();
-  $ekstensi =  array('jpg','jpeg');
+  
   $filename = $_FILES['gambar']['name'];
   $ukuran = $_FILES['gambar']['size'];
-  $ext = pathinfo($filename, PATHINFO_EXTENSION);
   
-  if(!in_array($ext,$ekstensi) ) {
-    header("location:gagal.php?alert=gagal_ekstensi");
-   }
-  else{
+  
+  
     if ($filename){
     unlink('../../img/'.$fotolama);
     
@@ -49,5 +46,4 @@
       WHERE id='$id'");
       header("location:dmasjid.php?alert=berhasil");
   }
-}
 ?>

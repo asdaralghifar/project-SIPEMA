@@ -151,7 +151,7 @@ include('../../config/koneksi.php'); ?>
 												<input type="file" name="gambar" class="form-control form-control-sm" id="smallInput">
                                                 <input type="hidden" name="fotolama" value="<?php echo $gambar; ?>">
                                                 
-												<label for="smallInput">Max: 2 MB | JPG,JPEG</label>
+												<label for="smallInput">Max: 2 MB</label>
 												
 											</div>
 											<div class="card-action">
